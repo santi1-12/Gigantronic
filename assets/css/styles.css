@@ -65,10 +65,12 @@ body {
 
 
 
-
 header {
-background: linear-gradient(to bottom, #ff6600, #002855);
-  color: white; /* Color del texto del header */
+    background: linear-gradient(to bottom, #ff6600, #002855);
+    color: white; /* Color del texto del header */
+
+
+
 }
 
 
