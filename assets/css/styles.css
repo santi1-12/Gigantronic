@@ -302,12 +302,12 @@ main {
     position: relative;
     left: 0
 }
-
 .card-img-top {
-    width: 230px;
-    height: 230px;
-    display: block;
-    margin: 0 auto
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
 
 /* .card {
@@ -319,10 +319,11 @@ main {
     flex-direction: column;
     justify-content: space-between
 }
-
 section .img-fluid {
     max-height: 100px;
-    margin: 10px 0
+    margin: 10px 0;
+  
+
 }
 
 .carousel-control-prev,
@@ -421,8 +422,10 @@ footer {
 
 
 .card img{
-    width: 100%;
+    width: 50%;
     object-fit: cover;
+    
+    
 }
 #imagenNosotros {
     max-width: 100%;
