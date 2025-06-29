@@ -5,12 +5,12 @@ body {
     overflow-x: hidden;
     min-height: 100%;
     padding: 0;
-    margin: 0
+    margin: 0;
 }
 
 .gigantronic-logo {
-    color: #ff6600; /* NARANJA */
-    -webkit-text-stroke: 2px #000; /* BORDE NEGRO */
+    color: #ff6600;
+    -webkit-text-stroke: 2px #000;
     text-transform: uppercase;
     font-family: 'Impact', 'Arial Black', sans-serif;
     letter-spacing: 2px;
@@ -21,26 +21,33 @@ body {
     color: #fff;
     border-radius: 12px;
     padding: 3rem 2rem;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    left: 0;
 }
 
 .bienvenida .btn {
     background-color: #05d07b;
     border: none;
 }
+
 .bienvenida .btn:hover {
     background-color: #048f58;
 }
+
 .titulo-bienvenida {
-    color: #ff6b00; /* Naranja fuerte */
-    -webkit-text-stroke: 2px #000; /* Borde negro grueso */
-    text-shadow: 1px 1px 4px #000; /* Sombra negra para más profundidad */
+    color: #ff6b00;
+    -webkit-text-stroke: 2px #000;
+    text-shadow: 1px 1px 4px #000;
     letter-spacing: 2px;
     font-family: 'Impact', 'Arial Black', sans-serif;
     text-transform: uppercase;
 }
 
 .eslogan {
-    color: #7CF0C4;  /* Cian brillante */
+    color: #7CF0C4;
     font-weight: 500;
     font-size: 1.5rem;
     text-shadow: 1px 1px 3px #003f88;
@@ -62,52 +69,39 @@ body {
     background: linear-gradient(45deg, #003f88, #FF6B00);
 }
 
-
-
-
 header {
     background: linear-gradient(to bottom, #ff6600, #002855);
-    color: white; /* Color del texto del header */
-
-
-
+    color: white;
 }
 
-
-/* Contenedor del carrusel */
+/* Carrusel */
 #miCarrusel {
     width: 100%;
-    max-width: 1000px;         /* Ajusta el tamaño general */
-    margin: 0 auto;            /* Centrado horizontal */
-    border: 3px solid #000;    /* Borde negro */
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 3px solid #000;
     border-radius: 12px;
-    overflow: hidden;          /* Muy importante para que nada se salga */
+    overflow: hidden;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-/* Contenedor interno del carrusel */
 #miCarrusel .carousel-inner {
     width: 100%;
 }
 
-/* Ajuste de las imágenes */
 #miCarrusel img {
     width: 100%;
-    background: linear-gradient(45deg, #ff6600, #ff914d, #334C75, #003f88, #7CF0C4, #05d07b);
-
-    height: 400px;             /* Ajusta esta altura según tu necesidad */
-    object-fit: contain;       /* ⬅️ Contain para que NO se distorsione ni se salga */
-        /* Relleno negro si la imagen no llena todo el espacio */
+    height: 400px;
+    object-fit: contain;
     display: block;
+    background: linear-gradient(45deg, #ff6600, #ff914d, #334C75, #003f88, #7CF0C4, #05d07b);
 }
 
-/* Ajuste del iframe (video) */
 #miCarrusel iframe {
     width: 100%;
     height: 400px;
 }
 
-/* Botones de navegación */
 #miCarrusel .carousel-control-prev-icon,
 #miCarrusel .carousel-control-next-icon {
     background-color: #000;
@@ -145,16 +139,15 @@ header {
     font-size: 0.9rem;
 }
 
-
 .dropdownMenu {
     background-color: #e9e9e9;
-    color: #fff
+    color: #fff;
 }
 
-#navbarSupportedContent li a{
+#navbarSupportedContent li a {
     color: #7cf0c4;
 }
- 
+
 .btn-login,
 .btn-register {
     color: #fff;
@@ -165,38 +158,14 @@ header {
     margin-right: 15px;
     width: 110px;
     text-align: center;
-    white-space: nowrap
+    white-space: nowrap;
 }
 
 .btn-login:hover,
 .btn-register:hover {
     color: rgb(148, 223, 148);
-    border-color: #7cf0c0
+    border-color: #7cf0c0;
 }
-
-/* @media (max-width: 992px) {
-
-    .navbar .btn-login,
-    .navbar .btn-register,
-    .navbar .btn-admin,
-    .navbar .btn-primary,
-    .navbar .dropdown-menu,
-    .navbar .dropdown-item {
-        margin-top: 15px;
-        background-color: #A8CEE8;
-        border: 1px solid #06563b;
-        color: #080000
-    }
-
-    .navbar .btn-login:hover,
-    .navbar .btn-register:hover,
-    .navbar .btn-admin:hover,
-    .navbar .btn-primary:hover {
-        background-color: #05d093;
-        border: 1px solid #06564f;
-        color: #0a0101
-    }
-} */
 
 .btn-admin {
     color: #fff;
@@ -206,11 +175,11 @@ header {
     border-radius: 5px;
     margin-right: 15px;
     text-align: center;
-    white-space: nowrap
+    white-space: nowrap;
 }
 
 .btn-admin:hover {
-    border-color:  #86f07c;
+    border-color: #86f07c;
     background-color: #5fd2b5;
 }
 
@@ -219,7 +188,7 @@ header {
 .btn-admin.dropdown-toggle:focus {
     background-color: #5F99D2;
     color: #fff;
-    border-color: #86f07c
+    border-color: #86f07c;
 }
 
 .dropdown-menu {
@@ -227,45 +196,45 @@ header {
 }
 
 .dropdown-item {
-    color: #000
+    color: #000;
 }
 
 .dropdown-item:hover,
 .dropdown-item:focus {
     background-color: #05d08c;
-    color: #fff
+    color: #fff;
 }
 
 .btn-primary {
     background-color: #5F99D2;
-    border-color: #7cf0dd
+    border-color: #7cf0dd;
 }
 
 .btn-primary:hover {
     background-color: #05d07b;
-    border-color: #9df07c
+    border-color: #9df07c;
 }
 
 .custom-modal {
     background-color: #A8CEE8;
-    color: black
+    color: black;
 }
 
-.custom-modal label{
+.custom-modal label {
     color: black;
 }
 
 .custom-modal .modal-header {
-    border-bottom: 1px solid #fff3
+    border-bottom: 1px solid #fff3;
 }
 
 .custom-modal .modal-body {
-    color: #fff
+    color: #fff;
 }
 
 .custom-modal .btn-primary {
     background-color: #334C75;
-    border-color: #7cf09f
+    border-color: #7cf09f;
 }
 
 .custom-modal .btn-primary:hover {
@@ -273,7 +242,7 @@ header {
 }
 
 main {
-    flex: 1
+    flex: 1;
 }
 
 .titulo1,
@@ -288,42 +257,29 @@ main {
     margin: 0;
     width: 100vw;
     position: relative;
-    left: 0
+    left: 0;
 }
 
-.bienvenida {
-    background-color: #334C75;
-    color: #fff;
-    border-radius: 10px;
-    padding: 1rem 0;
-    text-align: center;
-    margin: 0;
-    width: 100%;
-    position: relative;
-    left: 0
-}
+
 .card-img-top {
-  width: 230px;
-  height: 230px;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
 }
-
-/* .card {
-    height: 400px;
-} */
 
 .card-body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: space-between;
 }
+
 section .img-fluid {
     max-height: 100px;
     margin: 10px 0;
-  
-
 }
 
 .carousel-control-prev,
@@ -331,7 +287,7 @@ section .img-fluid {
     width: 5%;
     height: 50px;
     top: 50%;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
 }
 
 .carousel-control-prev-icon,
@@ -345,7 +301,7 @@ section .img-fluid {
 
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
-    background-color: #000000e6
+    background-color: #000000e6;
 }
 
 .publicidad1,
@@ -353,11 +309,11 @@ section .img-fluid {
 .video1 {
     width: 100%;
     height: 30rem;
-    max-width: 100%
+    max-width: 100%;
 }
 
 iframe {
-    border: none
+    border: none;
 }
 
 .iframe-mapa {
@@ -370,23 +326,23 @@ iframe {
 
 .accordion-item {
     background-color: #7cf0cd;
-    border: 1px solid #089caf
+    border: 1px solid #089caf;
 }
 
 .accordion-button:not(.collapsed) {
     background-color: #334C75;
     color: #fff;
-    border-color:#7cf0dd
+    border-color: #7cf0dd;
 }
 
 .accordion-button {
     background-color: #fff;
     color: #000000e6;
-    border: 1px solid #dee2e6
+    border: 1px solid #dee2e6;
 }
 
 .accordion-collapse {
-    border-top: 1px solid #7cf0dd
+    border-top: 1px solid #7cf0dd;
 }
 
 .tarjetaClientes,
@@ -395,9 +351,8 @@ iframe {
     background-color: #334C75;
     color: #fff;
     border: 1px solid #7cf0c4;
-    border-radius: 5px
+    border-radius: 5px;
 }
-
 
 footer {
     background-color: #334C75;
@@ -407,7 +362,7 @@ footer {
     padding: 20px 0;
     text-align: center;
     position: relative;
-    z-index: 1
+    z-index: 1;
 }
 
 #productImagePreview {
@@ -417,16 +372,9 @@ footer {
     margin: 0 auto;
     object-fit: contain;
     border: 1px solid #ddd;
-    padding: 5px
+    padding: 5px;
 }
 
-
-.card img{
-    width: 50%;
-    object-fit: cover;
-    
-    
-}
 #imagenNosotros {
     max-width: 100%;
     max-height: 100%;
@@ -434,4 +382,3 @@ footer {
     border-radius: 10px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
