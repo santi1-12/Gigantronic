@@ -18,15 +18,15 @@
 </head>
 
 <body>
-    </div>
     
-<header>
-    <nav class="navbar navbar-expand-lg barra w-100">
-    <div class="container-fluid">
-    <a class="navbar-brand d-flex align-items-center gap-2" href="nosotros.html">
-        <img class="logo" src="/assets/imagenes/icono_Gigantronic.png" alt="Logo de Gigantronic" loading="lazy">
-        <span class="fw-bold display-6 gigantronic-logo">GIGANTRONIC</span>
-    </a>
+    <header>
+        <nav class="navbar navbar-expand-lg barra w-100">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img class="logo" src="/assets/imagenes/icono_Gigantronic.png" alt="Logo de Gigantronic"
+                        loading="lazy">
+                    <span class="fw-bold display-6 gigantronic-logo">GIGANTRONIC</span>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Abrir menu de navegacion">
@@ -35,22 +35,23 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-1">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="productosDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false" aria-label="Abrir menu de productos">
+                                data-bs-toggle="dropdown" aria-expanded="false" aria-label="Abrir menú de productos">
                                 Productos
                             </a>
                             <ul class="dropdown-menu dropdownMenu" aria-labelledby="productosDropdown">
-                                <a href="inventarioDvr.html"><li><a class="dropdown-item" href="DVR">DVR</a></li></a>
-                                <a href="inventarioCamaras.html"><li><a class="dropdown-item" href="CAMARAS">CAMARAS</a></li></a>
-                                <a href="inventarioCamarasWifi.html"><li><a class="dropdown-item" href="CAMARAS_WIFI">CAMARAS WIFI</a></li></a>
-                                <a href="inventarioAsesorios.html"><li><a class="dropdown-item" href="ASESORIOS">ASESORIOS</a></li></a>
+                                <li><a class="dropdown-item" href="/views/inventarioDvr.html">DVR</a></li>
+                                <li><a class="dropdown-item" href="inventarioCamaras.html">CÁMARAS</a></li>
+                                <li><a class="dropdown-item" href="inventarioCamarasWifi.html">CÁMARAS WIFI</a></li>
+                                <li><a class="dropdown-item" href="inventarioAsesorios.html">ACCESORIOS</a></li>
                             </ul>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="#nuestrasMarcas">Marcas</a>
+                            <a class="nav-link" href="/views/productosMarca.html">Marcas</a>
                         </li>
                     </ul>
                     <form class="d-flex mt-1" role="search" style="width: 60%;">
@@ -58,7 +59,7 @@
                         <button class="btn btn-primary" type="submit">Buscar</button>
                     </form>
                     <div class="d-flex ms-auto mt-1">
-                        <a href="carrito" class="btn btn-primary me-2 position-relative"
+                        <a href="/views/carrito.html" class="btn btn-primary me-2 position-relative"
                             aria-label="Ir al carrito de compras">
                             <i class="fas fa-shopping-cart"></i>
                             <span id="carrito-badge"
@@ -90,7 +91,7 @@
                     <form>
                         <div class="mb-3">
                             <label for="email" class="form-label">Correo Electronico</label>
-                            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com"
+                            <input type="email" class="form-control" id="email" placeholder="Correo Electronico"
                                 required>
                         </div>
                         <div class="mb-3">
@@ -107,6 +108,7 @@
             </div>
         </div>
     </div>
+    
     <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content custom-modal">
@@ -119,13 +121,15 @@
                         <div class="mb-3">
                             <label for="email" class="form-label"><i class="bi bi-envelope-lock"></i>
                                 Ingrese su correo electrónico</label>
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Correo electrónico">
+                            <input type="email" class="form-control" name="email" id="email"
+                                placeholder="Correo electrónico">
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label"><i class="bi bi-key"></i> Ingrese su
                                 contraseña</label>
                             <div class="input-group">
-                                <input type="password" class="form-control" name="password" id="password" placeholder="Contraseña">
+                                <input type="password" class="form-control" name="password" id="password"
+                                    placeholder="Contraseña">
                                 <span class="input-group-text"><i class="bi bi-eye"></i></span>
                             </div>
                             <label for="passwordVerify" class="form-label"><i class="bi bi-key"></i> Verifique su
@@ -163,55 +167,68 @@
         </div>
     </div>
     <main>
-<div class="container my-5">
-    <div class="bienvenida rounded p-5 shadow text-center">
-        <h1 class="display-4 fw-bold mb-3 titulo-bienvenida">Bienvenido a Gigantronic</h1>
-        <p class="lead eslogan">Tu seguridad, nuestra prioridad</p>
-        <a href="#productos" class="btn btn-explorar btn-lg mt-3">Explorar productos</a>
-    </div>
-</div>
-
-
-<div id="miCarrusel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-
-        <div class="carousel-item active position-relative">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1zDUo3wMGak?si=HG54L8F9zs6Q4I7l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <div class="promocion-banner">¡PROMOCIÓN!</div>
-
-            <div class="referencia-camara">
-                Referencia: EZVIZ-H9C-CS-H9C-R100-8H33WKFL
+        <div class="container my-5">
+            <div class="bienvenida rounded p-5 shadow text-center">
+                <h1 class="display-4 fw-bold mb-3 titulo-bienvenida">Bienvenido a Gigantronic</h1>
+                <p class="lead eslogan">Tu seguridad, nuestra prioridad</p>
+                <a href="productosTotales.html" class="btn btn-explorar btn-lg mt-3">Explorar productos</a>
             </div>
         </div>
 
 
-        <div class="carousel-item position-relative">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/H_kSkqy-dPM?si=84AkySDq1Omkrs4m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
 
-            <div class="promocion-banner">¡PROMOCIÓN!</div>
-        </div>
+                <div class="carousel-item active position-relative">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1zDUo3wMGak?si=HG54L8F9zs6Q4I7l"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-        <div class="carousel-item position-relative">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/IekrG_eKZmQ?si=UNdg-7sd5yEr68XL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <div class="promocion-banner">¡PROMOCIÓN!</div>
+                    <div class="promocion-banner">¡PROMOCIÓN!</div>
 
-            <div class="referencia-camara">
-                Referencia: DOGNJOY-FOOD-PROMO
+                    <div class="referencia-camara">
+                        Referencia: EZVIZ-H9C-CS-H9C-R100-8H33WKFL
+                    </div>
+                </div>
+
+
+                <div class="carousel-item position-relative">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/H_kSkqy-dPM?si=84AkySDq1Omkrs4m"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <div class="promocion-banner">¡PROMOCIÓN!</div>
+                    <div class="referencia-camara">
+                        Referencia: h8c
+                    </div>
+
+                </div>
+
+                <div class="carousel-item position-relative">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IekrG_eKZmQ?si=UNdg-7sd5yEr68XL"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="promocion-banner">¡PROMOCIÓN!</div>
+
+                    <div class="referencia-camara">
+                        Referencia: h8c
+                    </div>
+                </div>
             </div>
+
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#miCarrusel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
         </div>
-    </div>
-
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#miCarrusel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-    </button>
-</div>
 
 
         </div>
@@ -236,8 +253,8 @@
                         <h5>Compra Segura</h5>
                         <p>Tu informacion esta protegida con los
                             mejores estandares de seguridad.</p>
+                    </div>
                 </div>
-            </div>
         </section>
         <section>
             <h2 class="titulo2">Productos Destacados</h2>
@@ -249,11 +266,12 @@
                                 class="badge bg-danger position-absolute top-0 start-0 m-2 px-3 py-2 rounded-pill shadow">
                                 -20% OFF
                             </span>
-                            <img src="/assets/imagenes/camaraHikvisionRDS-2CE70D0T-PTLXTS(2.8MM).png" class="card-img-top"
-                                alt="Camara Hikvision DS-2CE70D0T-PTLXTS(2.8MM)"
+                            <img src="/assets/imagenes/camaraHikvisionRDS-2CE70D0T-PTLXTS(2.8MM).png"
+                                class="card-img-top" alt="Camara Hikvision DS-2CE70D0T-PTLXTS(2.8MM)"
                                 title="Camara Hikvision DS-2CE70D0T-PTLXTS(2.8MM)" loading="lazy">
                             <div class="card-body text-center">
-                                <h5 class="card-title" title="camaraHikvisionR:DS-2CE70D0T-PTLXTS(2.8MM) ">Camara Hikvision DS-2CE70D0T-PTLXTS(2.8MM)</h5>
+                                <h5 class="card-title" title="camaraHikvisionR:DS-2CE70D0T-PTLXTS(2.8MM) ">Camara
+                                    Hikvision DS-2CE70D0T-PTLXTS(2.8MM)</h5>
                                 <p class="card-text">
                                     <span class="text-muted text-decoration-line-through fw-bold">$300.000 COP</span>
                                     <span class="text-danger fw-bold ms-2">$ 172.900 COP</span>
@@ -269,11 +287,10 @@
                                 -30% OFF
                             </span>
                             <img src="/assets/imagenes/Hilook-THC-B127-LPS(2.8MM).png" class="card-img-top"
-                                alt="Hilook-THC-B127-LPS(2.8MM).pngo"
-                                title="Hilook-THC-B127-LPS(2.8MM).png" loading="lazy">
+                                alt="Hilook-THC-B127-LPS(2.8MM).pngo" title="Hilook-THC-B127-LPS(2.8MM).png"
+                                loading="lazy">
                             <div class="card-body text-center">
-                                <h5 class="card-title"
-                                    title="Hilook-THC-B127-LPS(2.8MM).png">
+                                <h5 class="card-title" title="Hilook-THC-B127-LPS(2.8MM).png">
                                     Camara Hilook-THC-B127-LPS(2.8MM)</h5>
                                 <p class="card-text">
                                     <span class="text-muted text-decoration-line-through fw-bold">$100.000 COP</span>
@@ -290,8 +307,7 @@
                                 -10% OFF
                             </span>
                             <img src="/assets/imagenes/Ezviz-CS-H6C-R105-1L3WF.png" class="card-img-top"
-                                alt="Ezviz-CS-H6C-R105-1L3WF"
-                                title="Ezviz-CS-H6C-R105-1L3WF" loading="lazy">
+                                alt="Ezviz-CS-H6C-R105-1L3WF" title="Ezviz-CS-H6C-R105-1L3WF" loading="lazy">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Camara wifi Ezviz CS-H6C-R105-1L3WF</h5>
                                 <p class="card-text">
@@ -309,40 +325,41 @@
             <h2 class="titulo3">Nuestras Marcas</h2>
             <div class="row text-center align-items-center mx-0">
                 <div class="col-md-2 col-4">
-                    <a href="productosHikvision.html"><img src="/assets/imagenes/logohikvision.png" class="img-fluid" alt="Logo de hikvision"
-                        title="Logo de hikvision" loading="lazy">
-            </a>
+                    <a href="productosHikvision.html"><img src="/assets/imagenes/logohikvision.png" class="img-fluid"
+                            alt="Logo de hikvision" title="Logo de hikvision" loading="lazy">
+                    </a>
                 </div>
                 <div class="col-md-2 col-4">
-                <a href="productosEzviz.html"> <img src="/assets/imagenes/logoezviz.png" class="img-fluid" alt="Logo de hilook"
-                        title="Logo de ezviz" loading="lazy"></a>
+                    <a href="productosEzviz.html"> <img src="/assets/imagenes/logoezviz.png" class="img-fluid"
+                            alt="Logo de hilook" title="Logo de ezviz" loading="lazy"></a>
                 </div>
                 <div class="col-md-2 col-4">
-                <a href="productosHilook.html"><img src="/assets/imagenes/logohilook.png" class="img-fluid"
-                        alt="Logo de hilook" title="Logo de Alimento de Mascotas Delivery"
-                        loading="lazy">
-                        </a> 
+                    <a href="productosHilook.html"><img src="/assets/imagenes/logohilook.png" class="img-fluid"
+                            alt="Logo de hilook" title="Logo de Alimento de Mascotas Delivery" loading="lazy">
+                    </a>
                 </div>
                 <div class="col-md-2 col-4">
-                    <a href="productosDahua.html"><img src="/assets/imagenes/logodahua.png" class="img-fluid" alt="Logo de dahua"
-                        title="Logo de dahua" loading="lazy">
-                        </a>
+                    <a href="produtosDahua.html"><img src="/assets/imagenes/logodahua.png" class="img-fluid"
+                            alt="Logo de dahua" title="Logo de dahua" loading="lazy">
+                    </a>
                 </div>
                 <div class="col-md-2 col-4">
-                    <a href="productosFerreteria.html"><img src="/assets/imagenes/logoferreteria.png" class="img-fluid" alt="Logo de ferreteria"
-                        title="Logo de ferreteria" loading="lazy">
-                        </a>
+                    <a href="productosFerreteria.html"><img src="/assets/imagenes/logoferreteria.png" class="img-fluid"
+                            alt="Logo de ferreteria" title="Logo de ferreteria" loading="lazy">
+                    </a>
                 </div>
                 <div class="col-md-2 col-4">
-                    <a href="productosGigantronic.html"><img src="/assets/imagenes/logogigantronic.png" class="img-fluid" alt="Logo de gigantronic"
-                        title="Logo de gigantronic" loading="lazy">
-                        </a>
+                    <a href="productosGigantronic.html"><img src="/assets/imagenes/logogigantronic.png"
+                            class="img-fluid" alt="Logo de gigantronic" title="Logo de gigantronic" loading="lazy">
+                    </a>
                 </div>
             </div>
         </section>
         <section>
             <div>
-            <a href="preguntasFrecuentes.html"><h2 class="titulo4 text-center">Preguntas Frecuentes</h2></a>
+                <a href="preguntasFrecuentes.html">
+                    <h2 class="titulo4 text-center">Preguntas Frecuentes</h2>
+                </a>
 
         </section>
         <section>
@@ -351,7 +368,9 @@
                 <div class="row justify-content-center">
                     <div class="col-md-8">
                         <iframe aria-label="Ubicacion de PetMarket en Medellin"
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6175781826073!2d-75.6006742!3d6.181910099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4683ade727fd63%3A0x4d0892f40990bf1d!2sGigantronic!5e0!3m2!1ses-419!2sco!4v1751169611612!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6175781826073!2d-75.6006742!3d6.181910099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4683ade727fd63%3A0x4d0892f40990bf1d!2sGigantronic!5e0!3m2!1ses-419!2sco!4v1751169611612!5m2!1ses-419!2sco"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </iframe>
                     </div>
                 </div>

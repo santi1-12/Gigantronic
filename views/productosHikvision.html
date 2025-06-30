@@ -13,52 +13,58 @@
 </head>
 
 <body>
-    <header>
+<header>
         <nav class="navbar navbar-expand-lg barra w-100">
-            <div class="container-fluid<!DOCTYPE html>
-<html lang="es">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Catálogo de productos - Gigantronic" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <title>Catálogo de Productos - Gigantronic</title>
-</head>
-
-<body>
-  <header>
-    <!-- Reutilizar encabezado existente -->
-  </header>
-
- 
-
-  <footer class="mt-5">
-    <!-- Reutilizar footer existente -->
-  </footer>
-</body>
-
-</html>
-">
-                <a class="navbar-brand d-flex align-items-center gap-2" href="nosotros.html">
-                    <img class="logo" src="/assets/imagenes/icono_Gigantronic.png" alt="Logo de Gigantronic">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img class="logo" src="/assets/imagenes/icono_Gigantronic.png" alt="Logo de Gigantronic"
+                        loading="lazy">
                     <span class="fw-bold display-6 gigantronic-logo">GIGANTRONIC</span>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Abrir menu de navegacion">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="#">Catálogo</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#nuestrasMarcas">Marcas</a></li>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-1">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="productosDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" aria-label="Abrir menú de productos">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu dropdownMenu" aria-labelledby="productosDropdown">
+                                <li><a class="dropdown-item" href="/views/inventarioDvr.html">DVR</a></li>
+                                <li><a class="dropdown-item" href="inventarioCamaras.html">CÁMARAS</a></li>
+                                <li><a class="dropdown-item" href="inventarioCamarasWifi.html">CÁMARAS WIFI</a></li>
+                                <li><a class="dropdown-item" href="inventarioAsesorios.html">ACCESORIOS</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/views/productosMarca.html">Marcas</a>
+                        </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar...">
+                    <form class="d-flex mt-1" role="search" style="width: 60%;">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                         <button class="btn btn-primary" type="submit">Buscar</button>
                     </form>
+                    <div class="d-flex ms-auto mt-1">
+                        <a href="/views/carrito.html" class="btn btn-primary me-2 position-relative"
+                            aria-label="Ir al carrito de compras">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="carrito-badge"
+                                class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger"
+                                style="font-size:0.75rem;">
+                                2
+                                <span class="visually-hidden">productos en el carrito</span>
+                            </span>
+                        </a>
+    
+                    </div>
                 </div>
             </div>
         </nav>
@@ -100,15 +106,48 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Puedes duplicar más tarjetas según la cantidad de productos -->
         </div>
     </main>
-
-    <main class="container my-5">
-        
+        <main class="container my-5">
         <div class="row" id="catalogoProductos">
-            <!-- Tarjetas de productos -->
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="/assets/imagenes/camaraHikvisionRDS-2CE70D0T-PTLXTS(2.8MM).png" class="card-img-top" alt="Camara Hikvision">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Camara Hikvision DS-2CE70D0T-PTLXTS(2.8MM)</h5>
+                        <p class="card-text">Precio: <span class="text-danger fw-bold">$172.900 COP</span></p>
+                        <a href="comprarProducto.html" class="btn btn-primary">Ver Producto</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="/assets/imagenes/Hilook-THC-B127-LPS(2.8MM).png" class="card-img-top" alt="Camara Hilook">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Camara Hilook THC-B127-LPS(2.8MM)</h5>
+                        <p class="card-text">Precio: <span class="text-danger fw-bold">$75.100 COP</span></p>
+                        <a href="comprarProducto.html" class="btn btn-primary">Ver Producto</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="/assets/imagenes/Ezviz-CS-H6C-R105-1L3WF.png" class="card-img-top" alt="Camara Ezviz">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Camara wifi Ezviz CS-H6C-R105-1L3WF</h5>
+                        <p class="card-text">Precio: <span class="text-danger fw-bold">$128.300 COP</span></p>
+                        <a href="comprarProducto.html" class="btn btn-primary">Ver Producto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+            <main class="container my-5">
+        <div class="row" id="catalogoProductos">
+
             <div class="col-md-4 mb-4">
                 <div class="card h-100">
                     <img src="/assets/imagenes/camaraHikvisionRDS-2CE70D0T-PTLXTS(2.8MM).png" class="card-img-top" alt="Camara Hikvision">
@@ -144,9 +183,8 @@
         </div>
     </main>
         <main class="container my-5">
-        
         <div class="row" id="catalogoProductos">
-            <!-- Tarjetas de productos -->
+
             <div class="col-md-4 mb-4">
                 <div class="card h-100">
                     <img src="/assets/imagenes/camaraHikvisionRDS-2CE70D0T-PTLXTS(2.8MM).png" class="card-img-top" alt="Camara Hikvision">
@@ -182,9 +220,8 @@
         </div>
     </main>
         <main class="container my-5">
-        
         <div class="row" id="catalogoProductos">
-            <!-- Tarjetas de productos -->
+
             <div class="col-md-4 mb-4">
                 <div class="card h-100">
                     <img src="/assets/imagenes/camaraHikvisionRDS-2CE70D0T-PTLXTS(2.8MM).png" class="card-img-top" alt="Camara Hikvision">
@@ -219,9 +256,119 @@
             </div>
         </div>
     </main>
-    <footer class="bg-light py-4 mt-5">
-        <div class="container text-center">
-            <p>&copy; 2025 Gigantronic. Todos los derechos reservados.</p>
+        <main class="container my-5">
+        <div class="row" id="catalogoProductos">
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="/assets/imagenes/camaraHikvisionRDS-2CE70D0T-PTLXTS(2.8MM).png" class="card-img-top" alt="Camara Hikvision">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Camara Hikvision DS-2CE70D0T-PTLXTS(2.8MM)</h5>
+                        <p class="card-text">Precio: <span class="text-danger fw-bold">$172.900 COP</span></p>
+                        <a href="comprarProducto.html" class="btn btn-primary">Ver Producto</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="/assets/imagenes/Hilook-THC-B127-LPS(2.8MM).png" class="card-img-top" alt="Camara Hilook">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Camara Hilook THC-B127-LPS(2.8MM)</h5>
+                        <p class="card-text">Precio: <span class="text-danger fw-bold">$75.100 COP</span></p>
+                        <a href="comprarProducto.html" class="btn btn-primary">Ver Producto</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="/assets/imagenes/Ezviz-CS-H6C-R105-1L3WF.png" class="card-img-top" alt="Camara Ezviz">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Camara wifi Ezviz CS-H6C-R105-1L3WF</h5>
+                        <p class="card-text">Precio: <span class="text-danger fw-bold">$128.300 COP</span></p>
+                        <a href="comprarProducto.html" class="btn btn-primary">Ver Producto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+        <main class="container my-5">
+        <div class="row" id="catalogoProductos">
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="/assets/imagenes/camaraHikvisionRDS-2CE70D0T-PTLXTS(2.8MM).png" class="card-img-top" alt="Camara Hikvision">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Camara Hikvision DS-2CE70D0T-PTLXTS(2.8MM)</h5>
+                        <p class="card-text">Precio: <span class="text-danger fw-bold">$172.900 COP</span></p>
+                        <a href="comprarProducto.html" class="btn btn-primary">Ver Producto</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="/assets/imagenes/Hilook-THC-B127-LPS(2.8MM).png" class="card-img-top" alt="Camara Hilook">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Camara Hilook THC-B127-LPS(2.8MM)</h5>
+                        <p class="card-text">Precio: <span class="text-danger fw-bold">$75.100 COP</span></p>
+                        <a href="comprarProducto.html" class="btn btn-primary">Ver Producto</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="/assets/imagenes/Ezviz-CS-H6C-R105-1L3WF.png" class="card-img-top" alt="Camara Ezviz">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Camara wifi Ezviz CS-H6C-R105-1L3WF</h5>
+                        <p class="card-text">Precio: <span class="text-danger fw-bold">$128.300 COP</span></p>
+                        <a href="comprarProducto.html" class="btn btn-primary">Ver Producto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="container p-4 pb-0">
+            <section class="mb-4">
+                <h6>Ponte en Contacto con Nosotros</h6>
+                <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;"
+                    href="https://www.facebook.com" role="button" aria-label="Ir a Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #55acee;"
+                    href="https://twitter.com" role="button" aria-label="Ir a Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #dd4b39;"
+                    href="https://mail.google.com" role="button" aria-label="Ir a Google">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #ac2bac;"
+                    href="https://www.instagram.com" role="button" aria-label="Ir a Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #0082ca;"
+                    href="https://www.linkedin.com" role="button" aria-label="Ir a LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </section>
+            <section>
+                <h6>Nuestros Metodos de Pago</h6>
+                <i class="fab fa-cc-visa fa-2x mx-2"></i>
+                <i class="fab fa-cc-mastercard fa-2x mx-2"></i>
+                <i class="fab fa-cc-paypal fa-2x mx-2"></i>
+                <i class="fab fa-cc-amex fa-2x mx-2"></i>
+            </section>
+        </div>
+        <div class="p-3">
+            © 2025 Copyright PetMarket
+            <a class="text-body" href="https://mdbootstrap.com/"></a>
         </div>
     </footer>
 
