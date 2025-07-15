@@ -15,10 +15,11 @@
     <title>Gigantronic</title>
     <script src="assets/js/cargarLogin.js"></script>
     <script src="assets/js/deleteLogin.js"></script>
+
 </head>
 
 <body>
-    
+
     <header>
         <nav class="navbar navbar-expand-lg barra w-100">
             <div class="container-fluid">
@@ -68,11 +69,13 @@
                                 <span class="visually-hidden">productos en el carrito</span>
                             </span>
                         </a>
-                        <a href="panelContrasenas.html"><button class="btn btn-login me-2" type="button" data-bs-toggle="modal"
-                            data-bs-target="#loginModal" aria-label="Abrir modal de inicio de sesion">Iniciar
-                            Sesion</button></a>
-                        <a href="panelContrasenas.html"><button class="btn btn-register" type="button" data-bs-toggle="modal"
-                            data-bs-target="#registerModal" aria-label="Abrir modal de registro">Registrarse</button></a>
+                        <a href="panelContrasenas.html"><button class="btn btn-login me-2" type="button"
+                                data-bs-toggle="modal" data-bs-target="#loginModal"
+                                aria-label="Abrir modal de inicio de sesion">Iniciar
+                                Sesion</button></a>
+                        <a href="panelContrasenas.html"><button class="btn btn-register" type="button"
+                                data-bs-toggle="modal" data-bs-target="#registerModal"
+                                aria-label="Abrir modal de registro">Registrarse</button></a>
                     </div>
                 </div>
             </div>
@@ -109,7 +112,7 @@
 
 
     </div>
-    
+
     <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content custom-modal">
@@ -379,6 +382,56 @@
         </section>
     </main>
     <footer>
+        <div class="container">
+            <h5>Contáctanos</h5>
+            <form id="contactForm" onsubmit="enviarWhatsApp(); return false;">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre completo</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="numero" class="form-label">Número de contacto</label>
+                    <input type="tel" class="form-control" id="numero" required>
+                </div>
+                <div class="mb-3">
+                    <label for="interes" class="form-label">¿Qué te interesa?</label>
+                    <input type="text" class="form-control" id="interes" required>
+                </div>
+
+                <!-- Campo Plegable -->
+                <div class="mb-3">
+                    <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#comentariosOpcionales"
+                        role="button" aria-expanded="false" aria-controls="comentariosOpcionales">
+                        Agregar Comentarios Opcionales
+                    </a>
+                    <div class="collapse mt-2" id="comentariosOpcionales">
+                        <label for="comentarios" class="form-label">Comentarios adicionales</label>
+                        <textarea class="form-control" id="comentarios" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-success">Enviar por WhatsApp</button>
+            </form>
+        </div>
+
+        <!-- Script para armar el mensaje de WhatsApp -->
+        <script>
+            function enviarWhatsApp() {
+                const nombre = document.getElementById('nombre').value;
+                const numero = document.getElementById('numero').value;
+                const interes = document.getElementById('interes').value;
+                const comentarios = document.getElementById('comentarios').value;
+
+                const mensaje = `Hola, soy ${nombre}%0A📱 Tel: ${numero}%0A🛒 Me interesa: ${interes}%0A📝 Comentarios: ${comentarios}`;
+
+                const telefonoDestino = "573022547733"; // ← Cambia esto por tu número con indicativo (Ej: 57300XXXXXXX)
+                const url = `https://wa.me/${telefonoDestino}?text=${mensaje}`;
+
+                window.open(url, '_blank');
+            }
+        </script>
+
+
         <div class="container p-4 pb-0">
             <section class="mb-4">
                 <h6>Ponte en Contacto con Nosotros</h6>
